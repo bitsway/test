@@ -3,17 +3,17 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.yeapps.lged"
+        id        = "com.yeapps.cabm"
         version   = "1.0.0">
 
-    <name>ROSC TPV 1.0</name>
+    <name>CABM</name>
 
     <description>
-       ROSC TPV 1.0
+       CABM
     </description>
 
     <author href="businesssolutionapps.com" email="sabbir456@gmail.com">
-        Business Solution Apps Team
+        Md. Faisal Hossain
     </author>
 
     <!--
