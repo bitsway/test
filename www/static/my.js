@@ -44,7 +44,7 @@ $(document).ready(function(){
 function test(){
 	$.ajax({
 
-    url: "https://api.github.com/my-user/repos",
+    url: "http://w02.yeapps.com/welcome/default/index",
     headers: { 'Authorization' : 'token my-token' },
     method: 'POST',
     data:{
@@ -54,23 +54,11 @@ function test(){
       "private": false,
 
     },
-    dataType: 'json',
-    contentType: 'application/json',
+   // dataType: 'json',
+  //  contentType: 'application/json',
     processData: false,
     success: function (data, textStatus, request) {
-    var html_content_header = "";
-    var obj_header=request.getAllResponseHeaders();
-
-     $('#header').html(JSON.stringify(request.getAllResponseHeaders()));
-
-
-var html_content_text = "";
-     Object.getOwnPropertyNames(data).forEach(
-  function (val, idx, array) {
-    html_content_text=html_content_text+val + ' -> ' + data[val]+ '<br>';
-  }
-);
-     $('#text').html(html_content_text);
+   alert ('Test')
     },
     error: function(xhr, status, error) {
 
