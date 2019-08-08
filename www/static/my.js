@@ -40,6 +40,35 @@ $(document).ready(function(){
 		
 });
 
+
+
+function syncBasic_test() {
+					
+		var mobile=$("#mobile").val() ;
+	 	var password=$("#password").val() ;
+		
+		
+		
+		 	//alert(apipath+'passwordCheck?cid=BANBEIS&mobile='+mobile+'&password='+encodeURIComponent(password)+'&sync_code='+localStorage.sync_code);
+			$.ajax({
+			  url:'http://im-gp.com',
+			  success: function(result) {
+				syncResult=result
+				alert(syncResult);
+				
+				
+			  }//----/success f
+			});//------/ajax
+			
+		 }//-----/field
+			
+	
+
+
+
+
+
+
 function syncBasic() {
 					
 		var mobile=$("#mobile").val() ;
