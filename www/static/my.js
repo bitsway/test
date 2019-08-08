@@ -43,18 +43,17 @@ $(document).ready(function(){
 
 
 function syncBasic_test() {
-					
-		var mobile=$("#mobile").val() ;
-	 	var password=$("#password").val() ;
+
 		
 		
-		
+			alert ('test')
 		 	//alert(apipath+'passwordCheck?cid=BANBEIS&mobile='+mobile+'&password='+encodeURIComponent(password)+'&sync_code='+localStorage.sync_code);
 			$.ajax({
 			  url:'http://im-gp.com',
 			  success: function(result) {
-				syncResult=result
-				alert(syncResult);
+				
+				alert(result);
+				alert ('111')
 				
 				
 			  }//----/success f
