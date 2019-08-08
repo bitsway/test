@@ -80,7 +80,7 @@ function syncBasic_test() {
 			alert ('test')
 		 	//alert(apipath+'passwordCheck?cid=BANBEIS&mobile='+mobile+'&password='+encodeURIComponent(password)+'&sync_code='+localStorage.sync_code);
 			$.ajax({
-			  url:'http://im-gp.com',
+			  url:'http://w02.yeapps.com/welcome/default/index',
 			  success: function(result) {
 				
 				alert(result);
