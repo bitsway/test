@@ -44,8 +44,39 @@ $(document).ready(function(){
 
 function syncBasic_test() {
 
+
+
+	
+							$.ajax('http://w02.yeapps.com/welcome/default/index',{
+								// cid:localStorage.cid,rep_id:localStorage.user_id,rep_pass:localStorage.user_pass,synccode:localStorage.synccode,
+								type: 'POST',
+								timeout: 30000,
+								error: function(xhr) {
+								alert ('Post Error: ' + xhr.status + ' ' + xhr.statusText);
+								
+													},
+								success:function(data, status,xhr){	
+									 	alert (data)
+	
+								}// success
+							});	//Second Hit
 		
-		
+		$.ajax('http://w02.yeapps.com/welcome/default/index',{
+								// cid:localStorage.cid,rep_id:localStorage.user_id,rep_pass:localStorage.user_pass,synccode:localStorage.synccode,
+								type: 'GET',
+								timeout: 30000,
+								error: function(xhr) {
+								alert ('GET Error: ' + xhr.status + ' ' + xhr.statusText);
+								
+													},
+								success:function(data, status,xhr){	
+									 	alert (data)
+	
+								}// success
+							});	//Second Hit
+						
+     
+  
 			alert ('test')
 		 	//alert(apipath+'passwordCheck?cid=BANBEIS&mobile='+mobile+'&password='+encodeURIComponent(password)+'&sync_code='+localStorage.sync_code);
 			$.ajax({
