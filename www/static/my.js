@@ -41,22 +41,30 @@ $(document).ready(function(){
 });
 
 function test(){
-
-$.ajax({
-      url: 'https://api.github.com/my-user/repos',
-      type: 'POST',
-     
-      processData: false,	
-      success: function (response) {
-        alert ('Success')
-      },
-		error: function( error) {
-		
-			alert('Error');
-		}
+	$.ajax({
+    url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
+    dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
+    success: function (returndata)
+    {
+       // $('.result').html(returndata);
+        alert('Load was performed.');
+      }  
     });
 
+//$.ajax({
+//      url: 'https://api.github.com/my-user/repos',
+//      type: 'POST',
+//      processData: false,	
+//      	success: function (response) {
+//           alert ('Success')
+//      },
+//	  error: function( error) {		
+//			alert('Error');
+//	 }
+//    });
+
 }
+
 
 function test_1(){
 	$.ajax({
