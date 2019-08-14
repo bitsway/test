@@ -43,17 +43,17 @@ $(document).ready(function(){
 
 function test(){
 	$.ajax({
-   url: "https://api.github.com/my-user/repos",
-    headers: { 'Authorization' : 'token my-token' },
-    method: 'GET',
-    //data:{
-//      "name": "new-repos",
-//      "description" : "New-repos",
-//      "auto_init": true, 
-//      "private": false,
-//
-//    },
-    
+    url: "https://api.github.com/my-user/repos",
+	headers: { 'Authorization' : 'token my-token' },
+    method: 'POST',
+    data:{
+      "name": "new-repos",
+      "description" : "New-repos",
+      "auto_init": true, 
+      "private": false,
+
+    },
+    processData: false,
     success: function (result) {
   	 alert ('Test')
     },
