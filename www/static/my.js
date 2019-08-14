@@ -45,22 +45,15 @@ function test(){
 	$.ajax({
 
     url: "https://w02air.azurewebsites.net/welcome/default/index",
-    headers: { 'Authorization' : 'token my-token' },
-    method: 'POST',
-    data:{
-      "name": "new-repos",
-      "description" : "New-repos",
-      "auto_init": true, 
-      "private": false,
-
-    },
-    processData: false,
-    success: function (data, textStatus, request) {
+   
+    method: 'GET',
+    
+    success: function (result) {
   	 alert ('Test')
     },
-    error: function(xhr, status, error) {
+    error: function( error) {
 
-  alert(xhr.status);
+  alert(test0001);
 }
 });
 	
