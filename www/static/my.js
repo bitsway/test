@@ -42,10 +42,10 @@ $(document).ready(function(){
 
 function test(){
 	$.ajax({
-	url: "https://w02air.azurewebsites.net/welcome/default/index",
+	//url: "https://w02air.azurewebsites.net/welcome/default/index",
 	//dataType: "text",
-   // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
-    //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
+    url: "http://api.github.com/repos/VonC/gitolite/git/refs/tags",
+    dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
     success: function (returndata)
     {
        // $('.result').html(returndata);
