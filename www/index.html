@@ -1,50 +1,47 @@
-<!DOCTYPE html>
-<!--HTML5 doctype-->
-<html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-    <title>M-Reporting</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CABM</title>
     <link rel="stylesheet" href="static/c.min.css" />
     <link rel="stylesheet" href="static/jquery.mobile-1.4.0.min.css" /> 
    
     <script src="static/jquery-1.10.2.min.js">   </script>
-    <script src="static/jquery.mobile-1.4.0.min.js">   </script>	
+    <script src="static/jquery.mobile-1.4.0.min.js">   </script>		
+    
+	<script src="static/my.js">   </script>
 	
-    
-    
-     <script src="static/survey.js"></script>
-     <script type="text/javascript">
-function MM_jumpMenu(targ,selObj,restore){ //v3.0
-  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
-  if (restore) selObj.selectedIndex=0;
-}
-     </script>
-	 <style>
-		.bgc{
-			color:red;
+	<script>
+		$(document).ready(function(){
+				
+				$('#loader').hide();
+		});
+	
+		function syncPage(){
+			$(".errorChk").text("");
+			$.mobile.navigate("#pagesync")
+		};		
+		
+	</script>
+	       
+    <style>	
+        .reqField{ color:#FF0000;}
+        .errorChk{ color:#FF0000; text-shadow:none;}
+		.errorMsg{ color:#FF0000; text-shadow:none;}
+    	.auto_break{
+			word-wrap:break-word!important;
+			white-space:normal!important;
 		}
-		/********** jahangirEditedStart16Feb css ***************/
-		#imgStyle img{
-			border: 3px solid #ffffff;
-			border-radius: 5px;
-			width:56px !important;
-			height:70px !important;
+		
+		.tbl_bro_color{border:1px solid #B8DCDC;}
+		
+		.bgSet{
+			/*background-image : url("img3.jpg");*/
+			background-image : url("img3.jpg");
 		}
-		section { text-align: center; margin: 50px 0 0 0; }
-      .panzoom-parent { border: 2px solid #333; }
-      .panzoom-parent .panzoom { border: 2px dashed #666; }
-      .buttons { margin: 40px 0 0; }
-	  
-	  #users ul{margin:50px auto auto auto; padding:0; list-style:none}
-	  #users ul li {
-			border-bottom: 1px dashed #0088D1 !important;
-			overflow: hidden;
-			padding: 10px 0px 0px 0px;
-		}
-		/********** jahangirEditedEnd16Feb css ***************/
-	 </style>
-
+		
+    </style>	
 </head>
 
 
