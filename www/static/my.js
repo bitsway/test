@@ -54,11 +54,9 @@ function test(){
       "private": false,
 
     },
-   // dataType: 'json',
-  //  contentType: 'application/json',
     processData: false,
     success: function (data, textStatus, request) {
-   alert ('Test')
+  	 alert ('Test')
     },
     error: function(xhr, status, error) {
 
