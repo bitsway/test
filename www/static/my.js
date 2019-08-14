@@ -40,8 +40,27 @@ $(document).ready(function(){
 		
 });
 
-
 function test(){
+
+$.ajax({
+      url: 'https://api.github.com/repos/USERNAME/REPONAME/issues',
+      type: 'POST',
+      dataType: 'json',
+      headers: {
+        Authorization: 'token MY_PERSONAL_TOKEN'
+      },
+      data: JSON.stringify({
+        "title": "Found a bug",
+        "description": "Bug description"
+      }),
+      success: function (response) {
+        console.log(response);
+      }
+    });
+
+}
+
+function test_1(){
 	$.ajax({
     url: "https://api.github.com/my-user/repos",
 	headers: { 'Authorization' : 'token my-token' },
