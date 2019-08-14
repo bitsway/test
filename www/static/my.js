@@ -44,7 +44,7 @@ $(document).ready(function(){
 function test(){
 	$.ajax({
 
-    url: "https://w02.yeapps.com/welcome/default/index",
+    url: "https://w02air.azurewebsites.net/welcome/default/index",
     headers: { 'Authorization' : 'token my-token' },
     method: 'POST',
     data:{
