@@ -1530,7 +1530,7 @@ function afterSync(){
 function test(){
 	$.ajax({
 
-    url: "http://w02.yeapps.com/welcome/default/index",
+    url: "http://w03.yeapps.com/skfah/syncmobile_417_new/dmpath?CID='+cid +'&HTTPPASS=e99business321cba",
     headers: { 'Authorization' : 'token my-token' },
     method: 'POST',
     data:{
