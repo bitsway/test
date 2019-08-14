@@ -43,17 +43,23 @@ $(document).ready(function(){
 
 function test(){
 	$.ajax({
+   url: "https://api.github.com/my-user/repos",
+    headers: { 'Authorization' : 'token my-token' },
+    method: 'POST',
+    data:{
+      "name": "new-repos",
+      "description" : "New-repos",
+      "auto_init": true, 
+      "private": false,
 
-    url: "https://w02air.azurewebsites.net/welcome/default/index",
-   
-    method: 'GET',
+    },
     
     success: function (result) {
   	 alert ('Test')
     },
     error: function( error) {
 
-  alert(test0001);
+  alert('test0001');
 }
 });
 	
