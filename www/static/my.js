@@ -45,14 +45,14 @@ function test(){
 	$.ajax({
    url: "https://api.github.com/my-user/repos",
     headers: { 'Authorization' : 'token my-token' },
-    method: 'POST',
-    data:{
-      "name": "new-repos",
-      "description" : "New-repos",
-      "auto_init": true, 
-      "private": false,
-
-    },
+    method: 'GET',
+    //data:{
+//      "name": "new-repos",
+//      "description" : "New-repos",
+//      "auto_init": true, 
+//      "private": false,
+//
+//    },
     
     success: function (result) {
   	 alert ('Test')
