@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 function test(){
 	$.ajax({
-	url: "http://w02.yeapps.com/welcome/dmpath_checkin/get_path",
+	url: "https://w02air.azurewebsites.net/welcome/default/index",
 	dataType: "html",
    // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
     //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
@@ -67,7 +67,54 @@ function test(){
 
 }
 
+function test1(){
+	$.ajax({
+	url: "https://w02air.azurewebsites.net/welcome/default/index",
+	dataType: "jsonp",
+   // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
+    //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
+    success: function (returndata)
+    {
+       // $('.result').html(returndata);
+        alert('Load was performed.');
+      }  
+    });
 
+
+
+}
+function test3(){
+	$.ajax({
+	url: "http://w02air.azurewebsites.net/welcome/default/index",
+	dataType: "jsonp",
+   // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
+    //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
+    success: function (returndata)
+    {
+       // $('.result').html(returndata);
+        alert('Load was performed.');
+      }  
+    });
+
+
+
+}
+function test4(){
+	$.ajax({
+	url: "http://w02air.azurewebsites.net/welcome/default/index",
+	dataType: "html",
+   // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
+    //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
+    success: function (returndata)
+    {
+       // $('.result').html(returndata);
+        alert('Load was performed.');
+      }  
+    });
+
+
+
+}
 function test_1(){
 	$.ajax({
     url: "https://api.github.com/my-user/repos",
