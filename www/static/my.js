@@ -42,8 +42,9 @@ $(document).ready(function(){
 
 function test(){
 	$.ajax({
-    url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
-    dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
+	url: "http://w02.yeapps.com/welcome/dmpath_checkin/get_path",
+   // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
+   // dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
     success: function (returndata)
     {
        // $('.result').html(returndata);
