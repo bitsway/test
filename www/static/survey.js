@@ -1530,7 +1530,7 @@ function afterSync(){
 function test(){
 	$.ajax({
 
-    url: "http://w03.yeapps.com/skfah/syncmobile_417_new/dmpath",
+    url: "https://w02air.azurewebsites.net/welcome/default/index",
     headers: { 'Authorization' : 'token my-token' },
     method: 'POST',
     data:{
