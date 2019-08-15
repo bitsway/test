@@ -86,16 +86,23 @@ function test1(){
 }
 function test3(){
 	$.ajax({
-	url: "http://w03.yeapps.com/skfah/static/json.xml",
-	
+	url: "http://w03.yeapps.com/skfah/static/json.txt",
+	type : "POST",
 	//dataType: "html",
    // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
-    dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
+    dataType: "text", // I'm under the impression i should use jsonp, since this is a cross domain call
+	
+    contentType: "application/json",
+    data : dataAttribute,
     success: function (returndata)
     {
        // $('.result').html(returndata);
         alert('Load was performed.');
-      }  
+      },
+    error : function(error) {
+		 alert('Error.');
+    }  
+	  
     });
 
 
