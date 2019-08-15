@@ -45,12 +45,12 @@ function test(){
 	//url: "https://w02air.azurewebsites.net/welcome/default/index",
 	//dataType: "text",
     url: "http://w03.yeapps.com/skfah/test/test",
-	type: 'POST',
+	
     dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
     success: function (returndata)
     {
        // $('.result').html(returndata);
-        alert('Load was performed.');
+        alert('Load was performed.w03 jsonp');
       }  
     });
 
@@ -70,15 +70,14 @@ function test(){
 
 function test1(){
 	$.ajax({
-	url: "https://w02air.azurewebsites.net/welcome/default/index",
-	type: 'POST',
+	url: "https://w03.yeapps.com/skfah/test/test",
 	dataType: "jsonp",
    // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
     //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
     success: function (returndata)
     {
        // $('.result').html(returndata);
-        alert('Load was performed.');
+        alert('Load was performed. w03 https jsonp');
       }  
     });
 
@@ -87,9 +86,9 @@ function test1(){
 }
 function test3(){
 	$.ajax({
-	url: "http://w02air.azurewebsites.net/welcome/default/index",
-	type: 'POST',
-	dataType: "jsonp",
+	url: "http://http://w03.yeapps.com/skfah/test/test1",
+	
+	dataType: "html",
    // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
     //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
     success: function (returndata)
@@ -104,15 +103,14 @@ function test3(){
 }
 function test4(){
 	$.ajax({
-	url: "http://w02air.azurewebsites.net/welcome/default/index",
-	type: 'POST',
-	dataType: "html",
-   // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
-    //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
+	//url: "http://w02air.azurewebsites.net/welcome/default/index",
+	//dataType: "html",
+    url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
+    dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
     success: function (returndata)
     {
        // $('.result').html(returndata);
-        alert('Load was performed.');
+        alert('Load was performed.File in git');
       }  
     });
 
