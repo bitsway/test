@@ -45,6 +45,7 @@ function test(){
 	//url: "https://w02air.azurewebsites.net/welcome/default/index",
 	//dataType: "text",
     url: "http://w03.yeapps.com/skfah/test/test",
+	type: 'POST',
     dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
     success: function (returndata)
     {
@@ -70,6 +71,7 @@ function test(){
 function test1(){
 	$.ajax({
 	url: "https://w02air.azurewebsites.net/welcome/default/index",
+	type: 'POST',
 	dataType: "jsonp",
    // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
     //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
@@ -86,6 +88,7 @@ function test1(){
 function test3(){
 	$.ajax({
 	url: "http://w02air.azurewebsites.net/welcome/default/index",
+	type: 'POST',
 	dataType: "jsonp",
    // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
     //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
@@ -102,6 +105,7 @@ function test3(){
 function test4(){
 	$.ajax({
 	url: "http://w02air.azurewebsites.net/welcome/default/index",
+	type: 'POST',
 	dataType: "html",
    // url: "https://api.github.com/repos/VonC/gitolite/git/refs/tags",
     //dataType: "jsonp", // I'm under the impression i should use jsonp, since this is a cross domain call
